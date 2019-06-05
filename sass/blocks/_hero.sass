@@ -1,0 +1,99 @@
+.hero
+    padding: 48px 0
+    background-color: $secondary
+    &-block
+        display: flex
+    &-text
+        font-size: 50%
+        margin-right: 100px
+        &__title
+            font-size: 39.5px
+            font-weight: 800
+            line-height: 55px
+            margin-bottom: 41px
+            letter-spacing: 0.49px
+            +bold
+        &__subtitle
+            display: inline-block
+            font-size: 19.5px
+            margin-bottom: 67px
+            letter-spacing: 0.62px
+            +bold
+    &-list
+        margin: 0
+        padding: 0
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 26px
+            &:last-child
+                margin-bottom: 0
+        &__image
+            width: 40px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            margin-right: 30px
+        &__text
+            max-width: 250px
+            font-size: 14px
+            line-height: 23px
+    &-image
+        margin-top: -4px
+        max-width: 570px
+        min-height: 488px
+        object-fit: cover
+@media screen and (max-width: 1199px)
+    .hero
+        &-text
+            width: 70%
+            margin-right: 40px
+            &__title
+                font-size: 39.5px
+                margin-bottom: 50px
+                line-height: 40px
+            &__subtitle
+                margin-bottom: 69px
+                font-size: 20px
+                +bold
+        &-list
+            &__text
+                font-size: 14px
+            &__image
+                margin-right: 15px
+        &-image img
+            width: 100% 
+@media screen and (max-width: 992px)
+    .hero
+        &-block
+            flex-direction: column
+        &-image
+            margin-top: 30px
+@media screen and (max-width: 768px)
+    .hero
+        &-text
+            width: 90% 
+@media screen and (max-width: 768px)
+    .hero
+        &-block
+            flex-direction: column
+        &-text
+            width: 100%
+            &__title
+                font-size: 23px
+                margin-bottom: 13px
+            &__subtitle
+                margin-bottom: 28px
+                font-size: 16px
+                +bold
+        &-image
+            margin-top: 30px
+            min-height: 230px
+            height: 100%
+        &-list
+            &__text
+                font-size: 12px
+            &__image
+                margin-right: 15px
